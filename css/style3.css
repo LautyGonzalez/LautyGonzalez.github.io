@@ -1,0 +1,533 @@
+.navbar {
+    position: sticky;
+    width: 100%;
+    z-index: 100;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+}
+
+.navbar-brand img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #996600;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+#icon {
+    color: #fff;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+
+/* NAVEGACION*/
+nav{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1030;
+}
+
+.Imagen-Nav{
+    width: 40px;
+    margin: 5px;
+}
+ul{
+    grid-column: 2/4;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+    height: 50px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 0 7px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: #353535;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*Separador*/
+.separador{
+    background-color: rgb(161, 161, 161);
+    height: 1px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+body {
+    background-color: #000000;
+}
+
+/*Mision*/
+
+.mision{
+    color: #ffff;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+/*Creadores*/
+
+.Creadores{
+    color: #ffff;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.Tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.Tarj:hover{
+    background-color: rgb(70, 80, 16);
+    box-shadow: black 5px 5px 10px;
+    transition: .6s;
+}
+
+.Tarj{
+    background-color: rgb(14, 4, 4);
+    border-radius: 5px;
+    width: auto;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+}
+.Tarj img{
+    display: inline-block;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+/*Sobre Nosotros*/
+
+.aboutus{
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.aboutus p{
+    width: 90%;
+}
+
+/*Contacto*/
+
+.Contacto{
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+h5.pt-3 {
+    color: #ffff;
+}
+
+h1.mt-5.text-center.text-uppercase {
+    color: #ffff;
+}
+
+.Formulario-Contacto{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Formulario{
+    color: #ffff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.Formulario i{
+    width: 100%;
+}
+
+.Formulario i input, .Formulario i textarea{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.Formulario button{
+    display: inline-block;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.Formulario button i{
+    display: unset;
+    position: relative;
+    margin-right: 5px;
+}
+
+.Formulario button:hover{
+    background-color: rgb(163, 161, 255);
+    color: white;
+}
+
+@media (max-width:660px){
+    .navbar{
+        height: 111px;
+        width: 100%;
+        background-color: #000000;
+    }
+    
+    .Imagen-Nav{
+        display: none;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        width: 100%;
+    }
+    
+    li{
+        display: inline-block;
+        text-align: center;
+        height: 40px;
+    }
+    
+    a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    a:hover{
+        background-color: #353535;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+
+}
+ 
+
+@media (max-width:560px){
+
+    .Creadores{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .Tarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+    .Tarjetas h3{
+        text-align: center;
+    }
+    .Tarjetas p{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .Tarj:hover{
+        background-color: rgb(160, 160, 160);
+        box-shadow: black 5px 5px 10px;
+        transition: .6s;
+    }
+    
+    .Tarj{
+        background-color: grey;
+        border-radius: 5px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 10px;
+    }
+    .Tarj img{
+        display: inline-block;
+        width: 100px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media (max-width:320px){
+    * h1{
+        font-size: 15px;
+    }
+    * p{
+        font-size: 12px;
+    }
+    .Tarjetas p{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width:290px){
+
+    .inicio{
+        height: 100vh;
+        background: url(/img/fondo.jpg) no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .inicio b{
+        font-size: 40px;
+        color: white;
+        text-shadow: 0 -1px 10px #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar{
+        height: 240px;
+        width: 100%;
+        background-color: #000000;
+    }
+    
+    .Imagen-Nav{
+        display: none;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns:1fr;
+        list-style: none;
+        width: 100%;
+    }
+    .Tarjetas p{
+        width: 100%;
+    }
+    
+    li{
+        display: inline-block;
+        text-align: center;
+        height: 40px;
+    }
+    
+    a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    a:hover{
+        background-color: #353535;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+}
+@media (max-width:220px){
+    .maxWidth{
+        display: none;
+    }
+}
+
+@media (max-width: 160px){
+    .maxWidth2{
+        display: none !important;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-color: #000000;
+    padding: 70px 0;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #996600;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  }
+  
+  @media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+  }
+  
+  html,
+  body,
+  header,
+  .carousel {
+    height: 60vh;
+  }
+  
+  @media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100vh;
+    }
+  }
+  
+  @media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100vh;
+    }
+  }
+  
+  
+  
+  

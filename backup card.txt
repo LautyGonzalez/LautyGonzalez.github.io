@@ -1,0 +1,23 @@
+<div class="container">
+            <div class="product">
+              <div class="imgBx">
+                <img id="saco2" src="./img/productos/saco2.png" width="70%" />
+              </div>
+              <div class="contentBx">
+                <h2>Saco de pana</h2>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>S</span>
+                  <span>M</span>
+                  <span>L</span>
+                  <span>XL</span>
+                </div>
+                <div class="color">
+                  <h3>Color :</h3>
+                  <span id="amarillo"></span>
+                  <span id="azul"></span>
+                  <span id="gris"></span>
+                </div>
+                <a data-toggle="modal" data-target="#comprarsaco">Buy Now</a>
+              </div>
+            </div>
